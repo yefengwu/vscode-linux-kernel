@@ -3,16 +3,16 @@ Visual Studio Code project for Linux kernel sources
 
 Ensure the kernel is built (at least, all `*.cmd` files should be generated):
 
-    $ make defconfig
-    $ make
+     make defconfig
+     make
 
 Clone this repository as ".vscode":
 
-    $ git clone git@github.com:amezin/vscode-linux-kernel.git .vscode
+    git clone https://github.com/yefengwu/vscode-linux-kernel.git .vscode
 
 Generate compile_commands.json:
 
-    $ python .vscode/generate_compdb.py
+    python .vscode/generate_compdb.py
 
 If you are not compiling kernel for x64, change `intelliSenseMode` in
 `c_cpp_properties.json`. Possible values as of vscode-cpptools 1.0.1:
